@@ -1,0 +1,142 @@
+/* (IMPORTAÇÃO DE FONTE)
+Importa a fonte Poppins do Google Fonts para ser usada no site */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* (CONFIGURAÇÃO GLOBAL)
+Define configurações padrão para todos os elementos da página */
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* (ESTILO DO BODY)
+Responsável por centralizar todo o conteúdo da página e definir o fundo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 245, 200);
+}
+
+/* (CONTAINER DO FORMULÁRIO)
+Define o estilo da caixa principal onde fica o formulário */
+.container {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 190, 210);
+    border-radius: 10px;
+    color: rgb(219, 118, 150);
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(255,190,210);
+}
+
+/* (TÍTULO DO FORMULÁRIO)
+Estiliza o título dentro do container */
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* (CAIXA DOS CAMPOS)
+Estrutura que organiza cada campo de entrada do formulário */
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+/* (ESTILO DOS INPUTS)
+Define aparência dos campos de digitação */
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgb(255, 190, 210);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #c95c7f;
+    padding: 20px 45px 20px 20px;
+}
+
+/* (PLACEHOLDER DOS INPUTS)
+Define a aparência do texto de exemplo dentro dos campos */
+.input-box input::placeholder {
+    color: #c95c7f;
+}
+
+/* (ÍCONE DO INPUT)
+Responsável por posicionar e estilizar o ícone dentro do campo */
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #f3a3bd;
+    font-weight: 600;
+}
+
+/* (SEÇÃO LEMBRAR SENHA / ESQUECI SENHA)
+Organiza o checkbox e o link */
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* (LABEL DO CHECKBOX)
+Evita quebra de linha no texto */
+.remember-forgot label{
+    white-space: nowrap;
+}
+
+/* (LINK ESQUECI MINHA SENHA)
+Define aparência do link */
+.remember-forgot a{
+    text-decoration: none;
+    color: #d67a9a;
+    
+}
+/* (CHECKBOX - COR DE PREENCHIMENTO) */
+.remember-forgot input[type="checkbox"]{
+    accent-color: rgb(255, 255, 178);
+}
+
+/* (HOVER DO LINK)
+Estilo aplicado quando o mouse passa sobre o link */
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+/* (BOTÃO DE ENVIO)
+Estiliza o botão de login/enviar */
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #ffb6c8;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7a3d55;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+/* (INPUT INVÁLIDO)
+Define estilo quando o campo não foi preenchido corretamente */
+input:invalid {
+    border-color: rgb(192, 24, 116);
+}
+
+/* (INPUT VÁLIDO)
+Define estilo quando o campo foi preenchido corretamente */
+input:valid {
+    border-color: rgb(255, 190, 210);
+}
