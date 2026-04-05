@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- HEAD: configurações do site (metadados, links externos, título da página) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Biblioteca de ícones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Conexão com o arquivo CSS -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Nome que aparece na aba do navegador -->
+    <title>Petly</title>
+</head>
+
+<!-- BODY: tudo que aparece visualmente para o usuário -->
+<body>
+
+    <!-- MAIN: área principal da página -->
+    <main class="container">
+
+        <!-- FORM: formulário que coleta os dados do usuário -->
+        <form>
+
+            <!-- Título do formulário -->
+            <h1> Login Petly</h1>
+
+        <!-- INPUT-BOX: campo de entrada para o nome -->
+        <div class="input-box">
+            <input placeholder="Nome" type="text"required>
+            <i class="bx bxs-user"></i>
+        </div>
+
+        <!-- INPUT-BOX: campo de entrada para o email -->
+        <div class="input-box">
+            <input placeholder="Email" type="email"required>
+            <i class="bx bxs-user"></i>
+        </div>
+
+        <!-- INPUT-BOX: campo de entrada para telefone com limite de 11 números -->
+        <div class="input-box">
+             <input placeholder="Telefone" type="tel"maxlength="11" pattern="[0-9]{11}"required>
+            <i class="bx bxs-user"></i>
+        </div>
+
+        <!-- INPUT-BOX: campo de senha -->
+        <div class="input-box">
+            <input placeholder="Senha" type="password"required>
+            <i class="bx bxs-lock-alt"></i>
+        </div>
+
+            <!-- REMEMBER-FORGOT: área de lembrar senha e recuperação de senha -->
+            <div class="remember-forgot">
+                <label>
+                <input type="checkbox">
+                Lembrar minha senha
+                </label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+
+            <!-- BOTÃO: envia os dados do formulário -->
+            <button type="submit" class="login">Enviar</button>
+
+        </form>
+    </main>
+</body>
+</html>
